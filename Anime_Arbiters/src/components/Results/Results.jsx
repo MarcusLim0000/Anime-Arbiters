@@ -1,13 +1,17 @@
-import { useState } from 'react'
-import { BrowserRouter as Router } from "react-router-dom"
-import './Results.css'
-import Card from '../Card/Card.jsx'
+import React from 'react';
+import Card from '../Card/Card';
 
-export default function Results() {
+export default function Results({ results }) {
+  // Convert the object into an array using Object.values()
+  const resultsArray = Object.values(results || {});
 
   return (
-    <>
-        <Card/>
-    </>
-  )
+    <div className="results-container">
+    <div className="results-container">
+      {resultsArray.map(result => (
+        <Card key={result.mal_id} title={result.title} score={result.score} />
+      ))}
+    </div>
+    </div>
+  );
 }

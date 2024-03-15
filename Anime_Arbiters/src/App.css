@@ -15,23 +15,54 @@ h1 {
 
 body {
   background-image: url('./assets/background.jpg');
+  background-size: cover; /* Stretch background image to cover the entire container */
   margin: 0 auto;
 }
 
 .Recommend_button {
   position: absolute;
-  top: calc(20% + 50px);
+  top: calc(10% + 50px);
   left: calc(50% - 150px);
   transform: translateX(-50%);
 }
 
 .ToWatch_button {
   position: absolute;
-  top: calc(20% + 50px);
+  top: calc(10% + 50px);
   left: calc(50% + 100px);
   transform: translateX(-50%);
 }
 
 .Submit {
-  margin: 30px;
+  position: absolute;
+  top: calc(25% + 100px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.results-container {
+  position: absolute;
+  top: 250px;
+  left: 10px; /* Set the left margin */
+  right: 10px; /* Set the right margin */
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+  height: auto; 
+}
+
+.result-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.introduction {
+  position: absolute;
+  top: calc(15% + 50px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
 }

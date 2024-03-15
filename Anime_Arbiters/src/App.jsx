@@ -29,12 +29,3 @@ export default function App() {
     </>
   );
 }
-
-// async function callAnimeList() {
-//   const ret = await fetch('https://api.jikan.moe/v4/anime')
-//   const payload = await ret.json()
-//   const animeList = payload.data
-//   console.log(animeList.map(x=>[x.mal_id,x.title]))
-// }
-
-// callAnimeList()
