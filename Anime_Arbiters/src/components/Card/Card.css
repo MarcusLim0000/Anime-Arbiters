@@ -1,13 +1,14 @@
 .buttons-container {
   position: relative;
-  bottom: 5px; /* Set the distance from the bottom */
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
-  display: flex; /* Use flexbox */
+  display: flex; 
+  justify-content: center;
 }
 
 .recommendButton,
 .toWatchButton {
-  /* Button styles */
-  margin: 0 5px; /* Add some margin between buttons */
+  position: relative;
+  margin: 10px 10px 10px 10px;
 }

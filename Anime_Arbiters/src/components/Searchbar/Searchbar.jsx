@@ -13,9 +13,10 @@ export default function Searchbar({setShowResults}) {
       const mappedResults = animeList.map(anime => ({
         mal_id: anime.mal_id,
         title: anime.title,
-        score: anime.score
+        score: anime.score,
+        image: anime.images.jpg.image_url
       }));
-      console.log(mappedResults)
+      console.log(mappedResults) //need to edit out once app is done
       setResults(mappedResults);
     } catch (error) {
       console.error('Error fetching anime list:', error);
