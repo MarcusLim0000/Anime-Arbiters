@@ -1,8 +1,18 @@
-export default function ToWatchList() {
+import React from 'react';
+import WatchCard from './WatchCard';
 
-    return (
-      <>
-          <p>this is the to watch list!</p>
-      </>
-    )
-  }
+export default function ToWatchList({ watch, deleteWatch }) {
+  return (
+    <div>
+        {watch.map((watchList, index) => (
+          <WatchCard
+            key={index}
+            title={watchList.title}
+            score={watchList.score}
+            image={watchList.image}
+            onDelete={() => deleteWatch(index)}
+          />
+        ))}
+      </div>
+  );
+}
