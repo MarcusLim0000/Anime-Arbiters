@@ -1,5 +1,3 @@
-import { useState } from 'react'
-
 import Searchbar from '../Searchbar/Searchbar.jsx'
 import Results from '../Results/Results.jsx'
 

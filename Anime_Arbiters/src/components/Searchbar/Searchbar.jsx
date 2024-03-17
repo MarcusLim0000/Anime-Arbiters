@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Results from '../Results/Results';
 
-export default function Searchbar({setShowResults}) {
+export default function Searchbar() {
 
   const [results, setResults] = useState([]);
 
