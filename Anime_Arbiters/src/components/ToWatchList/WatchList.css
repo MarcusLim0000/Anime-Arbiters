@@ -1,0 +1,20 @@
+.watchContainer {
+    position: relative;
+    top: 250px;
+    left: 10px; /* Set the left margin */
+    right: 10px; /* Set the right margin */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    height: auto; 
+  }
+    
+.delete {
+      position: relative;
+      margin: 10px;
+    }
+  
+.watchCard {
+      border: 1px solid #ccc;
+      padding: 10px;
+  }

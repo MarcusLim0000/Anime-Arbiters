@@ -1,9 +1,10 @@
 import React from 'react';
 import WatchCard from './WatchCard';
+import './WatchList.css'
 
 export default function ToWatchList({ watch, deleteWatch }) {
   return (
-    <div>
+    <div className='watchContainer'>
         {watch.map((watchList, index) => (
           <WatchCard
             key={index}

@@ -1,5 +1,5 @@
 import React from 'react';
-import './RecCard.css'
+import './Rec.css'
 
 export default function RecCard(props) {
   const handleDelete = () => {
@@ -8,7 +8,6 @@ export default function RecCard(props) {
   };
 
   return (
-    <div className='rec-container'>
       <div className="recCard">
         <h2>{props.title}</h2>
         <p>Score: {props.score}</p>
@@ -17,6 +16,5 @@ export default function RecCard(props) {
           <button className='delete' onClick={handleDelete}>Delete</button>
         </div>
       </div>
-    </div>
   );
 }

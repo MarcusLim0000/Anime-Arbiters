@@ -1,5 +1,5 @@
-.rec-container {
-  position: absolute;
+.recContainer {
+  position: relative;
   top: 250px;
   left: 10px; /* Set the left margin */
   right: 10px; /* Set the right margin */

@@ -1,4 +1,5 @@
 import React from 'react';
+import './WatchList.css'
 
 export default function WatchCard(props) {
   const handleDelete = () => {
@@ -7,8 +8,7 @@ export default function WatchCard(props) {
   };
 
   return (
-    <div className='rec-container'>
-      <div className="recCard">
+      <div className="watchCard">
         <h2>{props.title}</h2>
         <p>Score: {props.score}</p>
         <img src={props.image} alt={props.title} />
@@ -16,6 +16,5 @@ export default function WatchCard(props) {
           <button className='delete' onClick={handleDelete}>Delete</button>
         </div>
       </div>
-    </div>
   );
 }

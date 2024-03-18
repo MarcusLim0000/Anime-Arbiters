@@ -1,9 +1,10 @@
 import React from 'react';
 import RecCard from './RecCard';
+import './Rec.css'
 
 export default function Recommendations({ recs, deleteRec }) {
   return (
-    <div>
+    <div className = 'recContainer'>
         {recs.map((recommendation, index) => (
           <RecCard
             key={index}
