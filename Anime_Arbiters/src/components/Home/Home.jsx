@@ -1,5 +1,6 @@
 import Searchbar from '../Searchbar/Searchbar.jsx'
 import Results from '../Results/Results.jsx'
+import './Home.css'
 
 export default function Home() {
 

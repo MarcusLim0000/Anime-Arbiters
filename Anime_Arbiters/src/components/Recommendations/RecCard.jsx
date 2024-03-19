@@ -3,7 +3,6 @@ import './Rec.css'
 
 export default function RecCard(props) {
   const handleDelete = () => {
-    // Call the onDelete function passed from the parent component
     props.onDelete();
   };
 
