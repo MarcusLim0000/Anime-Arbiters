@@ -17,7 +17,6 @@ export default function Searchbar() {
         score: anime.score,
         image: anime.images.jpg.image_url
       }));
-      console.log(mappedResults) //need to edit out once app is done
       setResults(mappedResults);
     } catch (error) {
       console.error('Error fetching anime list:', error);

@@ -1,9 +1,15 @@
 import React from 'react';
 import './Rec.css'
+import deleteRecFromAirTable from '../../airtable/airTableDeleteRec';
 
 export default function RecCard(props) {
-  const handleDelete = () => {
-    props.onDelete();
+  const handleDelete = async () => {
+    try {
+      await deleteRecFromAirTable(props.id);
+      props.onDelete();
+    } catch (error) {
+      console.error('Error deleting recommendation:', error);
+    }
   };
 
   return (

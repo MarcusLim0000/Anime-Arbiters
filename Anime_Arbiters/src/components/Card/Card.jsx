@@ -1,11 +1,17 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import './Card.css';
-import HandleRecContext from '../../HandleRecContext';
-import HandleWatchContext from '../../HandleWatchContext';
+import pushRecToAirtable from '../../airtable/airtTableRecFunc';
+import pushWatchToAirtable from '../../airtable/airTableWatchFunc';
 
 export default function Card(props) {
-  const { setRecs } = useContext(HandleRecContext);
-  const { setWatch } = useContext(HandleWatchContext);
+
+  const handleRec = (recData) => {
+    pushRecToAirtable(recData)
+  };
+
+  const handleWatch = (watchData) => {
+    pushWatchToAirtable(watchData)
+  };
 
   const recommend = () => {
     const recData = {
@@ -13,7 +19,7 @@ export default function Card(props) {
       score: props.score,
       image: props.image
     };
-    setRecs(prevRecs => [...prevRecs, recData]);
+    handleRec(recData);
   };
 
   const toWatch = () => {
@@ -22,7 +28,7 @@ export default function Card(props) {
       score: props.score,
       image: props.image
     };
-    setWatch(prevWatch => [...prevWatch, watchData]);
+    handleWatch(watchData);
   };
 
   return (

@@ -1,10 +1,15 @@
 import React from 'react';
 import './WatchList.css'
+import deleteWatchFromAirTable from '../../airtable/airTableDeleteWatch';
 
 export default function WatchCard(props) {
-  const handleDelete = () => {
-    // Call the onDelete function passed from the parent component
-    props.onDelete();
+  const handleDelete = async () => {
+    try {
+      await deleteWatchFromAirTable(props.id);
+      props.onDelete();
+    } catch (error) {
+      console.error('Error deleting to watch anime:', error);
+    }
   };
 
   return (
