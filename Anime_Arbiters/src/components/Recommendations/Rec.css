@@ -15,7 +15,8 @@
   }
 
 .recCard {
-    border: 1px solid #ccc;
-    padding: 20px;
+    border: 2px solid #cb0a0a;
+    border-radius: 10px;
+    padding: 10px;
     justify-content: center;
 }

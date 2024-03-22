@@ -15,7 +15,8 @@
     }
   
 .watchCard {
-      border: 1px solid #ccc;
-      padding: 20px;
+      border: 2px solid #0cc3df;
+      border-radius: 10px;
+      padding: 10px;
       justify-content: center;
   }
