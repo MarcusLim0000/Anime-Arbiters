@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiToken = 'patx8RYe18qnAqcqA.dad7481ff8f14daedf4bc11c8300e1b3f292ff4cdb39b87e3002881a0c89717e' //put in .env file when done
+const apiToken = '' //put in .env file when done
 
 const recUrl = 'https://api.airtable.com/v0/appN98ICSAtzIwO9h/tblFjmy2ZuNzDvZmj';
 
