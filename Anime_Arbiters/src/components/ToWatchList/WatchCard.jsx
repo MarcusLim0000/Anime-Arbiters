@@ -1,6 +1,6 @@
 import React from 'react';
 import './WatchList.css'
-import deleteWatchFromAirTable from '../../airtable/airTableDeleteWatch';
+import { deleteWatchFromAirTable } from '../../airtable/airTableFunctions';
 
 export default function WatchCard(props) {
   const handleDelete = async () => {

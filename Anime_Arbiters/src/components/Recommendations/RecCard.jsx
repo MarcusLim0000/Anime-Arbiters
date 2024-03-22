@@ -1,6 +1,6 @@
 import React from 'react';
 import './Rec.css'
-import deleteRecFromAirTable from '../../airtable/airTableDeleteRec';
+import { deleteRecFromAirTable } from '../../airtable/airTableFunctions';
 
 export default function RecCard(props) {
   const handleDelete = async () => {

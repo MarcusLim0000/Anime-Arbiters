@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import WatchCard from './WatchCard';
 import './WatchList.css';
-import getWatchFromAirTable from '../../airtable/airTableWatchGet';
+import { getWatchFromAirTable } from '../../airtable/airTableFunctions';
 
 export default function ToWatchList() {
   const [watch, setWatch] = useState([]);

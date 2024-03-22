@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import RecCard from './RecCard';
 import './Rec.css';
-import getRecFromAirTable from '../../airtable/airTableRecGet';
+import { getRecFromAirTable } from '../../airtable/airTableFunctions';
 
 export default function Recommendations() {
   const [recs, setRecs] = useState([]);

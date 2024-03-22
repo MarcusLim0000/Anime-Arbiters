@@ -1,7 +1,7 @@
 import React from 'react';
 import './Card.css';
-import pushRecToAirtable from '../../airtable/airtTableRecFunc';
-import pushWatchToAirtable from '../../airtable/airTableWatchFunc';
+import { pushRecToAirtable } from '../../airtable/airTableFunctions';
+import { pushWatchToAirtable } from '../../airtable/airTableFunctions';
 
 export default function Card(props) {
 
