@@ -4,11 +4,15 @@ import { Route, Link, Switch } from "react-router-dom";
 import Recommendations from './components/Recommendations/Recommendations.jsx'; 
 import ToWatchList from './components/ToWatchList/ToWatchList.jsx';
 import Home from './components/Home/Home.jsx';
+import logo from './assets/logo.jpg'
 
 export default function App() {
 
   return (
         <>
+          <div className='logo'>
+            <img src={logo} alt='Logo'/>
+          </div>
           <nav>
             <Link to='/'>
               <h1>The Anime Arbiters App</h1>
