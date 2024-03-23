@@ -26,6 +26,13 @@ h1 {
   margin:10px;
 }
 
+.RecAndDel {
+  position: relative;
+  justify-content: center;
+  margin:10px;
+  color: rgb(180, 159, 41);
+}
+
 body {
   background-image: url('./assets/background.jpg');
   background-size: cover; 
