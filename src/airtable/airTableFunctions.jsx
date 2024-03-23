@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const apiToken = import.meta.env.API_TOKEN
+const apiToken = process.env.API_TOKEN
 
 const recUrl = 'https://api.airtable.com/v0/appN98ICSAtzIwO9h/tblFjmy2ZuNzDvZmj';
 
