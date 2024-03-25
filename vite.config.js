@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react-swc'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  define: {
+    define: {
     "process.env": process.env,
-    ENV_KEY: process.env.ENV_KEY,
+    API_TOKEN: process.env.API_TOKEN,
   },
 })
