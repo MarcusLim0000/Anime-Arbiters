@@ -9,7 +9,7 @@ export default defineConfig(({ command, mode }) => {
     // vite config
     plugins: [react()],
     define: {
-      __APP_ENV__: JSON.stringify(env.APP_ENV),
+      API_TOKEN: JSON.stringify(env.API_TOKEN),
     },
   }
 })
