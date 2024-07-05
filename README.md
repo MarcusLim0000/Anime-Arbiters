@@ -1,5 +1,3 @@
-# React + Vite
-
 <h1>The Anime Arbiters App</h1>
 
 <img src="src/assets/logo.jpg" width="400px">
